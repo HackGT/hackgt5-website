@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#section-0 {
+	background-image: url('../assets/section-0-bg.png');
+	/**
+	 * TODO, add media selectors to
+	 * bring the background position of the background down, such that more sky is shown
+	 */
+	background-position: 0% 100%;
+	background-size: 100% auto;
+	background-color: #e88170;
+	background-repeat: no-repeat;
+}
+
+#section-1 {
+	background-color: #0c0c51;
+}
+
+.navbar {
+	/**
+	 * This is here rn bc there's padding created by
+	 * the p tags - feel free to change it as long as you get rid of the whitespace gap
+	 */
+	display: inline-block;
+
+	/**
+	 * You'll also probably want to make this absolutely positioned to make life easier
+	 */
+}
