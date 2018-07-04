@@ -4,12 +4,16 @@ var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
 
+var pathPrefix = "src/";
+var paths = ["header.html", "pages/*.html", "footer.html"];
+
 var pre = "header.html";
 var pages = "pages/*.html";
 
 function build() {
     console.log("Building site...");
-    return gulp.src(pages)
+    paths = paths.map(path => pathPrefix + path);
+    return gulp.src(paths)
         .pipe(plumber())
         .pipe(concat("index.html"))
         .pipe(gulp.dest("dist/"));
