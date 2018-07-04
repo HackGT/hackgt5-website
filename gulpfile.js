@@ -27,6 +27,6 @@ gulp.task('default', function() {
 gulp.task('watch', function() {
     build();
     return watch('src', function () {
-        build();
+        return build();
     });
 });
