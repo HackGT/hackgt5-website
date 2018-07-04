@@ -1,0 +1,12 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c5f0ff;
+      }
+    </style>
+  </defs>
+  <title>Top Right Stars</title>
+  <path class="cls-1" d="M1179.7,235.9v7.8h-.9a14.8,14.8,0,0,0-14.8,14.8v.9h-7.8v-.9a14.9,14.9,0,0,0-14.9-14.8h-.9v-7.8h.9a14.9,14.9,0,0,0,14.9-14.9v-.8h7.8v.8a14.9,14.9,0,0,0,14.8,14.9Z"/>
+  <path class="cls-1" d="M978.2,222.5v3.2h-.3a6.3,6.3,0,0,0-6.3,6.2v.4h-3.2v-.4a6.2,6.2,0,0,0-6.2-6.2h-.4v-3.2h.4a6.3,6.3,0,0,0,6.2-6.3v-.3h3.2v.3a6.3,6.3,0,0,0,6.3,6.3Z"/>
+</svg>
