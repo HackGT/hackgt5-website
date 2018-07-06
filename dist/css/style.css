@@ -11,8 +11,8 @@ body {
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	color: #0c0c51;
 	font-family: "Source Code Pro", sans-serif;
-	color: #fff;
 }
 
 h1 {
@@ -58,11 +58,12 @@ section {
 	 * You'll also probably want to make this absolutely positioned to make life easier
 	 */
 
-	position: fixed; 
+	position: absolute; 
 	width: 100%;
 	top: 0;
 	z-index: 100;
 	text-transform: uppercase;
+	font-family: 'Source Code Pro', sans-serif;
 }
 
 .nav {
@@ -71,7 +72,6 @@ section {
 
 .nav a {
 	text-decoration: none;
-	color: #fff;
 }
 
 .nav-left *, .nav-right * {
@@ -98,6 +98,14 @@ section {
 
 .nav-right > h2 {
     margin-right: 1.5em;
+}
+
+.light-text, .light-text a {
+	color: #fff;
+}
+
+.dark-text, .dark-text a {
+	color: #0c0c51;
 }
 
 section#splash {
@@ -144,7 +152,6 @@ section#splash {
 #countdown a {
 	text-transform: uppercase;
 	font-size: 2.5em;
-	color: #fff;
 }
 
 #countdown h3 {
@@ -164,12 +171,6 @@ section.generic-section {
 
 section#event {
 	background-color: #0c0c51;
-	color: #fff;
-	display: flex;
-}
-
-section#tracks, section#faq {
-	color: #0c0c51;
 }
 
 section#schedule {
@@ -184,6 +185,41 @@ section#schedule {
 	font-size: 1em;
 }
 
-#faq h2 {
+
+#faq #more-questions {
+	text-align: center;
 	font-family: Chicago, sans-serif;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#faq .grid h2 {
+	font-family: Chicago, sans-serif;
+}
+
+section#registration {
+	background-color: #c5f0ff;
+	font-family: Chicago, sans-serif;
+	text-align: center;
+}
+
+#registration .deadline {
+	font-family: 'Source Code Pro', sans-serif;
+}
+
+#register-link {
+	margin: 2em 0;
+}
+
+#register-link a {
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+#registration p {
+	font-size: 1em;
+}
+
+section#sponsors {
+	background-color: #e88170;
 }
