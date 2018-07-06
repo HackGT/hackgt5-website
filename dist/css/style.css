@@ -11,7 +11,8 @@ body {
 	margin: 0;
 	height: 100%;
 	width: 100%;
-    font-family: "Source Code Pro", sans-serif;
+	font-family: "Source Code Pro", sans-serif;
+	color: #fff;
 }
 
 h1 {
@@ -105,7 +106,6 @@ section#splash {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #e88170;
-	color: #fff;
 	font-family: Chicago, sans-serif;
 }
 
@@ -151,15 +151,39 @@ section#splash {
 	margin-top: 2em;
 }
 
-section#event {
-	background-color: #0c0c51;
-	color: #fff;
+section.generic-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
-#event div {
+.generic-section div.container {
 	margin: 0 25%
+}
+
+section#event {
+	background-color: #0c0c51;
+	color: #fff;
+	display: flex;
+}
+
+section#tracks, section#faq {
+	color: #0c0c51;
+}
+
+section#schedule {
+	background-color: #69d05b;
+}
+
+#faq div.container {
+	margin: 0 20%;
+}
+
+#faq p {
+	font-size: 1em;
+}
+
+#faq h2 {
+	font-family: Chicago, sans-serif;
 }
