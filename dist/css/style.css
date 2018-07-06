@@ -14,6 +14,16 @@ body {
     font-family: "Source Code Pro", sans-serif;
 }
 
+h1 {
+	text-align: center;
+	font-family: Chicago, sans-serif;
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.25em;
+}
+
 section {
 	width: 100%;
 	height: 100%;
@@ -51,6 +61,7 @@ section {
 	width: 100%;
 	top: 0;
 	z-index: 100;
+	text-transform: uppercase;
 }
 
 .nav {
@@ -58,7 +69,8 @@ section {
 }
 
 .nav a {
-    text-decoration: none;
+	text-decoration: none;
+	color: #0c0c51;
 }
 
 .nav-left *, .nav-right * {
@@ -92,22 +104,18 @@ section#splash {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: #e88170;
 	color: #0c0c51;
 	font-family: Chicago, sans-serif;
 }
 
-section#event {
-	background-color: #0c0c51;
-	color: #fff;
-}
-
 #countdown {
-	padding-top: 10%;
+	padding-top: 9%;
 	text-align: center;
 }
 
 #countdown h1 {
-	font-size: 4em;
+	font-size: 4.5em;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
@@ -118,7 +126,7 @@ section#event {
 }
 
 #time-table {
-	margin: 1.5em auto;
+	margin: 1.25em auto;
 }
 
 #time-table tr:first-of-type {
@@ -126,7 +134,7 @@ section#event {
 }
 
 #time-table tr:last-of-type {
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 #time-table td {
@@ -141,4 +149,17 @@ section#event {
 
 #countdown h3 {
 	margin-top: 2em;
+}
+
+section#event {
+	background-color: #0c0c51;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#event div {
+	margin: 0 25%
 }
