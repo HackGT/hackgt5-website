@@ -1,6 +1,10 @@
 @font-face {
-    font-family: Silom;
-    src: url("/dist/fonts/SilomBol.ttf");
+    font-family: Chicago;
+    src: url("/dist/fonts/Chicago.ttf");
+}
+
+html {
+	height: 100%;
 }
 
 body {
@@ -8,10 +12,6 @@ body {
 	height: 100%;
 	width: 100%;
     font-family: "Source Code Pro", sans-serif;
-}
-
-.navbar {
-    font-family: Silom, sans-serif;
 }
 
 section {
@@ -41,11 +41,16 @@ section {
 	 * This is here rn bc there's padding created by
 	 * the p tags - feel free to change it as long as you get rid of the whitespace gap
 	 */
-	display: inline-block;
+	/* display: inline-block; */
 
 	/**
 	 * You'll also probably want to make this absolutely positioned to make life easier
 	 */
+
+	position: fixed; 
+	width: 100%;
+	top: 0;
+	z-index: 100;
 }
 
 .nav {
@@ -80,4 +85,60 @@ section {
 
 .nav-right > h2 {
     margin-right: 1.5em;
+}
+
+section#splash {
+	background-image: url(../assets/Splash\ BG.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #0c0c51;
+	font-family: Chicago, sans-serif;
+}
+
+section#event {
+	background-color: #0c0c51;
+	color: #fff;
+}
+
+#countdown {
+	padding-top: 10%;
+	text-align: center;
+}
+
+#countdown h1 {
+	font-size: 4em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+#countdown h2 {
+	font-family: "Source Code Pro", sans-serif;
+	margin-top: 0;
+}
+
+#time-table {
+	margin: 1.5em auto;
+}
+
+#time-table tr:first-of-type {
+	font-size: 3.5em;
+}
+
+#time-table tr:last-of-type {
+	font-size: 1.5em;
+}
+
+#time-table td {
+	padding: .05em .5em
+}
+
+#countdown a {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: #0c0c51;
+}
+
+#countdown h3 {
+	margin-top: 2em;
 }
