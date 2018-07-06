@@ -70,7 +70,7 @@ section {
 
 .nav a {
 	text-decoration: none;
-	color: #0c0c51;
+	color: #fff;
 }
 
 .nav-left *, .nav-right * {
@@ -105,7 +105,7 @@ section#splash {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #e88170;
-	color: #0c0c51;
+	color: #fff;
 	font-family: Chicago, sans-serif;
 }
 
@@ -144,7 +144,7 @@ section#splash {
 #countdown a {
 	text-transform: uppercase;
 	font-size: 2.5em;
-	color: #0c0c51;
+	color: #fff;
 }
 
 #countdown h3 {
