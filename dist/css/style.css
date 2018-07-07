@@ -29,6 +29,10 @@ section {
 	width: 100%;
 	min-height: 100%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .navbar {
@@ -102,7 +106,6 @@ section#splash {
 }
 
 #countdown {
-	padding-top: 9%;
 	text-align: center;
 }
 
@@ -142,15 +145,16 @@ section#splash {
 	margin-top: 2em;
 }
 
-section.generic-section {
+.container {
+	padding-top: 4%;
+}
+
+.container > .main {
+	padding: 5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-
-.generic-section div.container {
-	margin: 5%
 }
 
 section#event {
@@ -163,6 +167,10 @@ section#schedule {
 
 #faq p {
 	font-size: 1em;
+}
+
+#faq > .container > .main > h1 {
+	margin-bottom: 0;
 }
 
 #faq #more-questions {
@@ -203,6 +211,19 @@ section#sponsors {
 	background-color: #e88170;
 }
 
+.social-media {
+	margin-top: 1em;
+}
+
+.social-media > a {
+	display: block;
+	margin: 2.5em 0;
+}
+
+.social-media > a > img {
+	width: 3em;
+}
+
 @media only screen and (max-aspect-ratio: 5/4) {
 	.navbar {
 		display: none;
@@ -210,11 +231,12 @@ section#sponsors {
 }
 
 @media only screen and (min-aspect-ratio: 1/1) {
-	.generic-section div.container {
-		margin: 5% 25%
+	.container > .main {
+		padding: 5% 15%
 	}
 
-	#faq div.container {
-		margin: 5% 20%;
+	#faq > .container > .main {
+		padding: 2%;
 	}
+	
 }
