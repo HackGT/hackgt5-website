@@ -252,4 +252,55 @@ section#sponsors {
 		width: 0;
 		height: 0;
 	}
+	
 }
+
+div.day-container > div,
+div.desc
+{
+	display: inline;
+}
+
+div.day-item {
+    min-width: 168px;
+}
+
+div.day-container {
+    font-family: Chicago, sans-serif;
+}
+
+div.day-container > div.selected {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+div.day-container> div:not(:last-child) {
+    margin-right: 2em;
+}
+
+div.time {
+    display: inline-block;
+    min-width: 100px;
+}
+
+div.time > div {
+    display: inline-block;
+}
+
+div.time > div:first-child {
+    min-width: 50px;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+div.day {
+    display: none;
+}
+
+div.day.show {
+    display: inherit;
+}
+
