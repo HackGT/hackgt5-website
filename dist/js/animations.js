@@ -1,6 +1,8 @@
 new fullpage('#fullpage', {
     autoScrolling:true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    anchors: ['splash', 'event', 'tracks', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
+    menu: '#nav',
     onLeave: function(origin, destination, direction) {
         if (destination.index === 2 || destination.index === 4 || destination.index === 6) {
             document.getElementById('scroll-nav').classList.add('dark-text');

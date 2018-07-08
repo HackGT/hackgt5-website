@@ -50,42 +50,27 @@ section {
 	font-family: 'Source Code Pro', sans-serif;
 }
 
-.nav {
+#nav {
     padding-top: 1em;
 }
 
-.nav a {
+#nav a {
 	text-decoration: none;
+	font-size: 1.35em;
 }
 
-.nav-left *, .nav-right * {
-    /*float: left;*/
-    display: inline-block;
+#nav li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 3.5em;
 }
 
-.nav-right * {
-    font-weight: 400;
+#nav li.active a {
+	text-decoration: underline;
 }
 
-.nav-left {
-    margin-left: 3.5em;
-    display: inline-block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-style: italic;
-}
-
-.nav-right {
-    margin-right: 2em;
-    float: right;
-}
-
-.nav-right > h2 {
-    margin-right: 1.5em;
-}
-
-.nav a {
-	color: #fff;
+#nav li:first-of-type {
+	margin-left: 8.33%;
 }
 
 .light-text, .light-text a {
@@ -96,7 +81,7 @@ section {
 	color: #0c0c51;
 }
 
-section#splash {
+#splash-section {
 	background-image: url(../assets/Splash\ BG.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -145,40 +130,40 @@ section#splash {
 	margin-top: 2em;
 }
 
-section#event {
+#event-section {
 	background-color: #0c0c51;
 }
 
-section#schedule {
+#schedule-section {
 	background-color: #ac4c8f;
 }
 
-#faq p {
+#faq-section p {
 	font-size: 1em;
 }
 
-#faq > .container > .main > h1 {
+#faq-section > .container > .main > h1 {
 	margin-bottom: 0;
 }
 
-#faq #more-questions {
+#faq-section #more-questions {
 	text-align: center;
 	font-family: Chicago, sans-serif;
 	width: 80%;
 	margin-left: 10%;
 }
 
-#faq .grid h2 {
+#faq-section .grid h2 {
 	font-family: Chicago, sans-serif;
 }
 
-section#registration {
+#registration-section {
 	background-color: #533b89;
 	font-family: Chicago, sans-serif;
 	text-align: center;
 }
 
-#registration .deadline {
+#registration-section .deadline {
 	font-family: 'Source Code Pro', sans-serif;
 }
 
@@ -191,11 +176,11 @@ section#registration {
 	font-size: 1.2em;
 }
 
-#registration p {
+#registration-section p {
 	font-size: 1em;
 }
 
-section#sponsors {
+#sponsors-section {
 	background-color: #e88170;
 }
 
