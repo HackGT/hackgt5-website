@@ -158,7 +158,7 @@ section#event {
 }
 
 section#schedule {
-	background-color: #69d05b;
+	background-color: #ac4c8f;
 }
 
 #faq p {
@@ -181,7 +181,7 @@ section#schedule {
 }
 
 section#registration {
-	background-color: #c5f0ff;
+	background-color: #533b89;
 	font-family: Chicago, sans-serif;
 	text-align: center;
 }
@@ -211,20 +211,16 @@ section#sponsors {
 	margin-top: 1em;
 }
 
-.social-media > a {
-	display: block;
-	margin: 2.5em 0;
-}
-
-.social-media > a > img {
+.social-media > a > svg {
 	width: 3em;
+	margin: 1.5em 0;
 }
 
 .rect {
 	background-color: #fff;
 	height: 4em;
 	width: 1em;
-	margin: 3em 0 3em auto;
+	margin: 2.5em 0 2.5em auto;
 }
 
 .line {
@@ -239,7 +235,7 @@ section#sponsors {
 }
 
 .rect:nth-of-type(3) {
-	height: 6.5em;
+	height: 8em;
 }
 
 @media only screen and (max-aspect-ratio: 5/4) {
