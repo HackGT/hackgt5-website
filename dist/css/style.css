@@ -207,14 +207,15 @@ section {
 	background-color: #fff;
 	height: 4em;
 	width: 1em;
-	margin: 2.5em 0 2.5em auto;
+	/* basically trying to offset this so it looks equidistant from the edge of the screen as the social media icons */
+	margin: 2.5em 2em 2.5em auto; 
 }
 
 .line {
 	background-color: #fff;
 	height: 3em;
 	width: .1em;
-	margin: 0 0.45em 0 auto;
+	margin: 0 2.55em 0 auto;
 }
 
 .dark-text .rect, .dark-text .line {

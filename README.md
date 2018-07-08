@@ -15,3 +15,18 @@ Build the project and then watch for changes:
 gulp watch
 ```
 The project will be built each time you make changes.
+
+TODO:
+* mobile styling
+* add logo to navbar 
+* make navbar take up more of the screen width
+* add transition animations when switching from light to dark navigation & tweak this so it works better
+* add svg elems for each section
+* add smoother transition for changing hours/days on countdown timer 
+* animations for social media icons
+* animations for hovering over "sign up" on splash
+* add functionality for rectangles to function as buttons up/down on the right side
+* add track logos + descriptions to the track page
+* tweak schedule page (center text, make bigger, change cursor on the buttons, etc.)
+* swap out current text for finalized content
+* about page

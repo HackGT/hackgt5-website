@@ -43,6 +43,5 @@ server/config/questions\.schema\.d\.ts
 .travis.d/Gemfile.lock
 .travis.d/vendor
 
-# Compiled assets
-dist/index.html
+
 
