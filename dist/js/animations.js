@@ -59,3 +59,11 @@ var down = document.getElementById('down');
 down.onclick = function() {
     fullpage_api.moveSectionDown();
 }
+
+document.querySelectorAll('div.track-option').forEach(function(option) {
+    option.onclick = function() {
+        document.querySelector('div.track.show').classList.remove('show');
+        var divToShow = option.dataset.track;
+        document.getElementById(divToShow).classList.add('show');
+    }
+});

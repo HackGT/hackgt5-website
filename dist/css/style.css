@@ -187,7 +187,7 @@ section {
 
 #social-media, #scroll-nav {
 	position: fixed;
-	padding-top: 10%;
+	padding-top: 7%;
 	z-index: 100;
 	height: 80%;
 }
@@ -291,4 +291,21 @@ div.day > table {
 
 div.day td {
 	padding: 0.75em 1em;
+}
+
+#tracks-section h3 {
+	font-family: Chicago, sans-serif;
+}
+
+.track-option {
+	text-align: center;
+	cursor: pointer;
+}
+
+.track {
+	display: none;
+}
+
+.track.show {
+	display: block;
 }
