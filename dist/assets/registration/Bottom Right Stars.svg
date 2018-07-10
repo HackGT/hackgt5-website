@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="138.6" height="84.3" viewBox="0 0 138.6 84.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ac4c8f;
+      }
+    </style>
+  </defs>
+  <title>Bottom Right Stars</title>
+  <g>
+    <path class="cls-1" d="M22,8.8v4.4h-.5a8.3,8.3,0,0,0-8.3,8.3V22H8.8v-.5A8.3,8.3,0,0,0,.5,13.2H0V8.8H.5A8.3,8.3,0,0,0,8.8.5V0h4.4V.5a8.3,8.3,0,0,0,8.3,8.3Z"/>
+    <path class="cls-1" d="M138.6,53.6V63.8h-1.1a19.4,19.4,0,0,0-19.4,19.4v1.1H107.9V83.2A19.3,19.3,0,0,0,88.6,63.8H87.4V53.6h1.2a19.2,19.2,0,0,0,19.3-19.3V33.1h10.2v1.2a19.3,19.3,0,0,0,19.4,19.3Z"/>
+  </g>
+</svg>
