@@ -62,7 +62,7 @@ section {
 #nav li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 3.5em;
+	margin-right: 3%;
 }
 
 #nav li.active a {
@@ -188,34 +188,39 @@ section {
 	position: fixed;
 	padding-top: 10%;
 	z-index: 100;
+	height: 80%;
 }
 
 #social-media {
 	margin-left: 91.67%;
 }
 
-#social-media {
-	margin-top: 1em;
+#social-media > a {
+	text-decoration: none;
 }
 
 #social-media > a > svg {
-	width: 3em;
-	margin: 1.5em 0;
+	height: 10%;
+	margin: 20% 0;
+}
+
+#scroll-nav {
+	padding-left: 20px;
 }
 
 .rect {
 	background-color: #fff;
-	height: 4em;
-	width: 1em;
+	height: 16%;
+	width: 15%;
 	/* basically trying to offset this so it looks equidistant from the edge of the screen as the social media icons */
-	margin: 2.5em 2em 2.5em auto; 
+	margin: 20% auto; 
 }
 
 .line {
 	background-color: #fff;
-	height: 3em;
-	width: .1em;
-	margin: 0 2.55em 0 auto;
+	height: 16%;
+	width: 4%;
+	margin: 30% auto;
 }
 
 .dark-text .rect, .dark-text .line {
@@ -223,7 +228,7 @@ section {
 }
 
 .rect:nth-of-type(3) {
-	height: 8em;
+	height: 26%;
 }
 
 @media only screen and (max-aspect-ratio: 5/4) {
@@ -239,18 +244,16 @@ section {
 	
 }
 
-div.day-container > div,
-div.desc
+div.day-container > div
 {
 	display: inline;
 }
 
-div.day-item {
-    min-width: 168px;
-}
-
 div.day-container {
-    font-family: Chicago, sans-serif;
+	font-family: Chicago, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	cursor: pointer;
 }
 
 div.day-container > div.selected {
@@ -260,20 +263,6 @@ div.day-container > div.selected {
 
 div.day-container> div:not(:last-child) {
     margin-right: 2em;
-}
-
-div.time {
-    display: inline-block;
-    min-width: 100px;
-}
-
-div.time > div {
-    display: inline-block;
-}
-
-div.time > div:first-child {
-    min-width: 50px;
-    text-align: right;
 }
 
 .hidden {
@@ -288,3 +277,11 @@ div.day.show {
     display: inherit;
 }
 
+div.day > table {
+	margin: 1em auto 0 auto;
+	font-size: 1.25em;
+}
+
+div.day td {
+	padding: 0.75em 1em;
+}
