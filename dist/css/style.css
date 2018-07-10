@@ -57,6 +57,7 @@ section {
 #nav a {
 	text-decoration: none;
 	font-size: 1.35em;
+	transition: color .7s ease;
 }
 
 #nav li {
@@ -203,21 +204,27 @@ section {
 	height: 10%;
 	margin: 20% 0;
 }
+ #social-media > a > svg > path {
+	transition: fill 0.7s ease;
+ }
 
 #scroll-nav {
 	padding-left: 20px;
 }
 
-.rect {
+.rect, .line {
 	background-color: #fff;
-	height: 16%;
+	transition: background-color 0.7s ease;
+}
+
+.rect {
+	height: 13%;
 	width: 15%;
 	/* basically trying to offset this so it looks equidistant from the edge of the screen as the social media icons */
 	margin: 20% auto; 
 }
 
 .line {
-	background-color: #fff;
 	height: 16%;
 	width: 4%;
 	margin: 30% auto;

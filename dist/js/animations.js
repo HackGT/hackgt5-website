@@ -48,3 +48,14 @@ setTimeout(function() {
     updateDate();
     setInterval(updateDate, 3600 * 1000);
 }, Math.round(secondsToHourMark * 1000));
+
+// scroll up/down with the rectangles on the side:
+var up = document.getElementById('up');
+up.onclick = function() {
+    fullpage_api.moveSectionUp();
+}
+
+var down = document.getElementById('down');
+down.onclick = function() {
+    fullpage_api.moveSectionDown();
+}
