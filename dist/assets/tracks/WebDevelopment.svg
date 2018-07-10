@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="85.4" height="68.2" viewBox="0 0 85.4 68.2" style="pointer-events: none;">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #533b89;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #ac4c8f;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        fill: #ac4c8f;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>Web Development</title>
+  <g>
+    <g>
+      <polygon class="cls-1" points="61.6 48.2 22.8 48.2 42.2 28.8 61.6 48.2"/>
+      <polygon class="cls-1" points="75.8 48.2 53.4 48.2 64.6 37 75.8 48.2"/>
+      <polygon class="cls-1" points="32 48.2 9.6 48.2 20.8 37 32 48.2"/>
+    </g>
+    <path class="cls-2" d="M2.5,13.7H82.9a0,0,0,0,1,0,0V61.6a4.1,4.1,0,0,1-4.1,4.1H6.6a4.1,4.1,0,0,1-4.1-4.1V13.7A0,0,0,0,1,2.5,13.7Z"/>
+    <path class="cls-3" d="M6,2.5H79.4A3.5,3.5,0,0,1,82.9,6v7.6a0,0,0,0,1,0,0H2.5a0,0,0,0,1,0,0V6A3.5,3.5,0,0,1,6,2.5Z"/>
+    <circle class="cls-4" cx="11.8" cy="8.5" r="1.9"/>
+    <circle class="cls-4" cx="19.4" cy="8.5" r="1.9"/>
+  </g>
+</svg>

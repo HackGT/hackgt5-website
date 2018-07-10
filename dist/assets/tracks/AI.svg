@@ -1,0 +1,27 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="60.1" height="83.7" viewBox="0 0 60.1 83.7" style="pointer-events: none;">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ac4c8f;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #533b89;
+      }
+
+      .cls-3 {
+        fill: #ac4c8f;
+      }
+    </style>
+  </defs>
+  <title>AI</title>
+  <g>
+    <path class="cls-1" d="M57.6,30.1V76.4a4.8,4.8,0,0,1-4.9,4.8H22.3a4.8,4.8,0,0,1-4.9-4.8V74.5A4.8,4.8,0,0,0,16,71.1L3.9,59a4.8,4.8,0,0,1-1.4-3.4V30.1a27.6,27.6,0,1,1,55.1,0Z"/>
+    <path class="cls-2" d="M42,47.7a10.5,10.5,0,0,1-21,0L31.5,37.2Z"/>
+    <path class="cls-2" d="M42,26.9a10.5,10.5,0,0,1-21,0L31.5,16.4Z"/>
+    <rect class="cls-3" x="19" y="73.9" width="37.3" height="6.08"/>
+  </g>
+</svg>

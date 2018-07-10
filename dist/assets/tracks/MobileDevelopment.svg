@@ -1,0 +1,37 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="55.3" height="90" viewBox="0 0 55.3 90" style="pointer-events: none;">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ac4c8f;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #ac4c8f;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #533b89;
+      }
+    </style>
+  </defs>
+  <title>Mobile Development</title>
+  <g>
+    <rect class="cls-1" x="2.5" y="2.5" width="50.3" height="85.02" rx="9.8" ry="9.8"/>
+    <path class="cls-2" d="M46.3,87.5H9.1a6.7,6.7,0,0,1-6.6-6.9V74.7H52.8v5.9A6.7,6.7,0,0,1,46.3,87.5Z"/>
+    <path class="cls-2" d="M11.9,2.5H43.5a9.4,9.4,0,0,1,9.4,9.4v.4a0,0,0,0,1,0,0H2.5a0,0,0,0,1,0,0v-.4A9.4,9.4,0,0,1,11.9,2.5Z"/>
+    <circle class="cls-3" cx="27.7" cy="81.7" r="3.3"/>
+    <g>
+      <polygon class="cls-4" points="37.5 57.5 17.8 57.5 27.7 47.7 37.5 57.5"/>
+      <polygon class="cls-4" points="32.1 62 23.2 62 27.7 57.5 32.1 62"/>
+      <polygon class="cls-4" points="37.5 47.7 17.8 47.7 27.7 37.9 37.5 47.7"/>
+      <polygon class="cls-4" points="37.5 37.9 17.8 37.9 27.7 28 37.5 37.9"/>
+    </g>
+  </g>
+</svg>
