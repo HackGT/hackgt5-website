@@ -44,6 +44,7 @@ section {
 	z-index: 100;
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', sans-serif;
+	text-align: center;
 }
 
 #nav a {
@@ -60,10 +61,6 @@ section {
 
 #nav li.active a {
 	text-decoration: underline;
-}
-
-#nav li:first-of-type {
-	margin-left: 8.33%;
 }
 
 .light-text, .light-text a {
