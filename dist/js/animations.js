@@ -4,7 +4,7 @@ new fullpage('#fullpage', {
     anchors: ['splash', 'event', 'tracks', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
     menu: '#nav',
     responsiveWidth: 767,
-    responsiveHeight: 900,
+    responsiveHeight: 690,
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
         if (dark_text_pages.indexOf(destination.index) != -1) {

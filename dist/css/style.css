@@ -74,6 +74,10 @@ section {
 	color: #0c0c51;
 }
 
+svg, object {
+	pointer-events: none;
+}
+
 #splash-section {
 	background-image: url(../assets/Splash\ BG.png);
 	background-size: cover;
@@ -131,10 +135,6 @@ section {
 	padding-bottom: 2%;
 }
 
-#event-section p, #sponsors-section p {
-	font-size: 115%;
-}
-
 #schedule-section {
 	background-color: #ac4c8f;
 }
@@ -178,6 +178,10 @@ section {
 #sponsors-section {
 	background-color: #e88170;
 	text-align: center;
+}
+
+#sponsors-section p {
+	font-size: 125%;
 }
 
 #social-media, #scroll-nav {
@@ -303,7 +307,7 @@ div.day td {
 	}
 }
 
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 690px) {
 	#scroll-nav, #social-media, #nav {
 		display: none;
 		width: 0;
