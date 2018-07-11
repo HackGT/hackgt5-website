@@ -18,11 +18,7 @@ body {
 h1 {
 	text-align: center;
 	font-family: Chicago, sans-serif;
-	font-size: 3em;
-}
-
-p {
-	font-size: 1.25em;
+	font-size: 2.5em;
 }
 
 section {
@@ -50,13 +46,9 @@ section {
 	font-family: 'Source Code Pro', sans-serif;
 }
 
-#nav {
-    padding-top: 1em;
-}
-
 #nav a {
 	text-decoration: none;
-	font-size: 1.35em;
+	font-size: 115%;
 	transition: color .7s ease;
 }
 
@@ -139,12 +131,12 @@ section {
 	padding-bottom: 2%;
 }
 
-#schedule-section {
-	background-color: #ac4c8f;
+#event-section p, #sponsors-section p {
+	font-size: 115%;
 }
 
-#faq-section p {
-	font-size: 1em;
+#schedule-section {
+	background-color: #ac4c8f;
 }
 
 #faq-section > .container > .main > h1 {
@@ -154,11 +146,13 @@ section {
 #faq-section #more-questions {
 	text-align: center;
 	font-family: Chicago, sans-serif;
-	width: 80%;
-	margin-left: 10%;
 }
 
-#faq-section .grid h2 {
+#faq-section h1 {
+	margin-bottom: 0;
+}
+
+#faq-section h3 {
 	font-family: Chicago, sans-serif;
 }
 
@@ -181,12 +175,9 @@ section {
 	font-size: 1.2em;
 }
 
-#registration-section p {
-	font-size: 1em;
-}
-
 #sponsors-section {
 	background-color: #e88170;
+	text-align: center;
 }
 
 #social-media, #scroll-nav {
@@ -241,19 +232,6 @@ section {
 	height: 26%;
 }
 
-@media only screen and (max-aspect-ratio: 5/4) {
-	.navbar {
-		display: none;
-	}
-
-	.hide-on-mobile {
-		display: none;
-		width: 0;
-		height: 0;
-	}
-	
-}
-
 div.day-container > div
 {
 	display: inline;
@@ -301,6 +279,7 @@ div.day td {
 }
 
 .track-option {
+	margin-top: 4%;
 	text-align: center;
 	cursor: pointer;
 }
@@ -311,4 +290,29 @@ div.day td {
 
 .track.show {
 	display: block;
+}
+
+#about-section p {
+	margin-top: 4%;
+}
+
+@media only screen and (min-width: 767px) {
+	#about-section .svg-container {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-height: 900px) {
+	#scroll-nav, #social-media, #nav {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	#scroll-nav, #social-media {
+		padding-top: 20%;
+	}
 }
