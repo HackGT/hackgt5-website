@@ -70,7 +70,7 @@ section {
 	fill: #fff;
 }
 
-.dark-text, .dark-text a {
+.dark-text, .dark-text a, #svg-icon .dark-text, #svg-icon .dark-text a {
 	color: #0c0c51;
 	fill: #0c0c51;
 }
