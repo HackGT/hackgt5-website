@@ -13,9 +13,9 @@ new fullpage('#fullpage', {
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.setAttribute('fill', '#0c0c51');
             });
-            document.querySelectorAll('#svg-logo *').forEach(function(elem) {
-                elem.setAttribute('fill', '#0c0c51');
-                elem.setAttribute('stroke', '#0c0c51');
+            console.log('butt')
+            document.querySelectorAll('#svg-icon *').forEach(function(elem) {
+                elem.classList.add('dark-text');
             });
         } else {
             document.getElementById('scroll-nav').classList.remove('dark-text');
@@ -23,9 +23,8 @@ new fullpage('#fullpage', {
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.setAttribute('fill', '#fff');
             });
-            document.querySelectorAll('#svg-logo *').forEach(function(elem) {
-                elem.setAttribute('fill', '#fff');
-                elem.setAttribute('stroke', '#fff');
+            document.querySelectorAll('#svg-icon *').forEach(function(elem) {
+                elem.classList.remove('dark-text');
             });
         }
     }
