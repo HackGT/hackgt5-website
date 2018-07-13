@@ -13,7 +13,6 @@ new fullpage('#fullpage', {
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.setAttribute('fill', '#0c0c51');
             });
-            console.log('butt')
             document.querySelectorAll('#svg-icon *').forEach(function(elem) {
                 elem.classList.add('dark-text');
             });
