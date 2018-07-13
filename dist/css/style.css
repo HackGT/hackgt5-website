@@ -76,7 +76,7 @@ svg, object {
 }
 
 #splash-section {
-	background-image: url(../assets/Splash\ BG.png);
+	background-image: url(../assets/Splash\ BG.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
