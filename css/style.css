@@ -44,6 +44,7 @@ section {
 	z-index: 100;
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', sans-serif;
+	text-align: center;
 }
 
 #nav a {
@@ -56,22 +57,22 @@ section {
 	display: inline-block;
 	list-style: none;
 	margin-right: 3%;
+	height: 100%;
+	vertical-align: top;
 }
 
 #nav li.active a {
 	text-decoration: underline;
 }
 
-#nav li:first-of-type {
-	margin-left: 8.33%;
-}
-
 .light-text, .light-text a {
 	color: #fff;
+	fill: #fff;
 }
 
 .dark-text, .dark-text a {
 	color: #0c0c51;
+	fill: #0c0c51;
 }
 
 svg, object {
@@ -79,7 +80,7 @@ svg, object {
 }
 
 #splash-section {
-	background-image: url(../assets/Splash\ BG.png);
+	background-image: url(../assets/Splash\ BG.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -139,10 +140,6 @@ svg, object {
 	background-color: #ac4c8f;
 }
 
-#faq-section > .container > .main > h1 {
-	margin-bottom: 0;
-}
-
 #faq-section #more-questions {
 	text-align: center;
 	font-family: Chicago, sans-serif;
@@ -154,6 +151,10 @@ svg, object {
 
 #faq-section h3 {
 	font-family: Chicago, sans-serif;
+}
+
+#faq-email {
+	padding-top: 4%;
 }
 
 #registration-section {
@@ -197,13 +198,16 @@ svg, object {
 
 #social-media > a {
 	text-decoration: none;
+	display: block;
+	width: 50%;
+	padding-left: 1em;
 }
 
 #social-media > a > svg {
 	height: 8%;
 	margin: 20% 0;
 }
- #social-media > a > svg > path {
+ #social-media > a > svg > path, #svg-icon * {
 	transition: fill 0.7s ease;
  }
 
@@ -288,14 +292,6 @@ div.day td {
 	cursor: pointer;
 }
 
-.track {
-	display: none;
-}
-
-.track.show {
-	display: block;
-}
-
 #about-section p {
 	margin-top: 4%;
 }
@@ -305,6 +301,15 @@ div.day td {
 		max-width: 80%;
 		margin: 0 auto;
 	}
+
+	.track {
+		display: none;
+	}
+	
+	.track.show {
+		display: block;
+	}
+
 }
 
 @media only screen and (max-height: 690px) {
@@ -312,6 +317,16 @@ div.day td {
 		display: none;
 		width: 0;
 		height: 0;
+	}
+
+	.hide-svg {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	#faq-header, #faq-email .col-8-12 {
+		width: 100% !important;
 	}
 }
 
