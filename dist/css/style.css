@@ -136,10 +136,6 @@ svg, object {
 	background-color: #ac4c8f;
 }
 
-#faq-section > .container > .main > h1 {
-	margin-bottom: 0;
-}
-
 #faq-section #more-questions {
 	text-align: center;
 	font-family: Chicago, sans-serif;
@@ -151,6 +147,10 @@ svg, object {
 
 #faq-section h3 {
 	font-family: Chicago, sans-serif;
+}
+
+#faq-email {
+	padding-top: 4%;
 }
 
 #registration-section {
