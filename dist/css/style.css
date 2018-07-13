@@ -49,14 +49,14 @@ section {
 
 #nav a {
 	text-decoration: none;
-	font-size: 115%;
+	font-size: 110%;
 	transition: color .7s ease;
 }
 
 #nav li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 3%;
+	margin-right: 2%;
 	height: 100%;
 	vertical-align: top;
 }
@@ -320,8 +320,22 @@ div.day td {
 
 }
 
+#mlh-trust-badge {
+	display: block;
+	max-width: 80px;
+	min-width: 40px;
+	position: relative;
+	top: -20px;
+	width: 90%;
+	z-index: 10000;
+	left: 5px;
+}
 
-@media only screen and (max-height: 690px) {
+#mlh-trust-badge img {
+	width: 100%;
+}
+
+@media only screen and (max-height: 600px), only screen and (max-width: 1002px) {
 	#scroll-nav, #social-media, #nav {
 		display: none;
 		width: 0;
@@ -342,5 +356,11 @@ div.day td {
 @media only screen and (max-width: 1150px) {
 	#scroll-nav, #social-media {
 		padding-top: 20%;
+	}
+}
+
+@media only screen and (min-width: 1151px) {
+	#mlh-trust-badge {
+		left: 50%;
 	}
 }
