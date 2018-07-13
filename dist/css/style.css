@@ -288,14 +288,6 @@ div.day td {
 	cursor: pointer;
 }
 
-.track {
-	display: none;
-}
-
-.track.show {
-	display: block;
-}
-
 #about-section p {
 	margin-top: 4%;
 }
@@ -305,6 +297,15 @@ div.day td {
 		max-width: 80%;
 		margin: 0 auto;
 	}
+
+	.track {
+		display: none;
+	}
+	
+	.track.show {
+		display: block;
+	}
+
 }
 
 @media only screen and (max-height: 690px) {
@@ -312,6 +313,16 @@ div.day td {
 		display: none;
 		width: 0;
 		height: 0;
+	}
+
+	.hide-svg {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	#faq-header, #faq-email .col-8-12 {
+		width: 100% !important;
 	}
 }
 
