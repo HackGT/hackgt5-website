@@ -13,12 +13,20 @@ new fullpage('#fullpage', {
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.setAttribute('fill', '#0c0c51');
             });
+            document.querySelectorAll('#svg-logo *').forEach(function(elem) {
+                elem.setAttribute('fill', '#0c0c51');
+                elem.setAttribute('stroke', '#0c0c51');
+            });
         } else {
             document.getElementById('scroll-nav').classList.remove('dark-text');
             document.getElementById('nav').classList.remove('dark-text');
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.setAttribute('fill', '#fff');
-            })
+            });
+            document.querySelectorAll('#svg-logo *').forEach(function(elem) {
+                elem.setAttribute('fill', '#fff');
+                elem.setAttribute('stroke', '#fff');
+            });
         }
     }
 }); 
