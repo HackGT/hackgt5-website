@@ -157,10 +157,6 @@ svg, object {
 	font-family: Chicago, sans-serif;
 }
 
-#faq-email {
-	padding-top: 4%;
-}
-
 #registration-section {
 	background-color: #533b89;
 	font-family: Chicago, sans-serif;
@@ -313,6 +309,14 @@ div.day td {
 	.track.show {
 		display: block;
 	}
+
+  .main {
+    padding-top: 2%;
+  }
+
+  #questions {
+    font-size: 95%;
+  }
 
 }
 
