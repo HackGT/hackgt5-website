@@ -38,7 +38,7 @@ section {
 	 * You'll also probably want to make this absolutely positioned to make life easier
 	 */
 
-	position: fixed; 
+	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 100;
@@ -73,6 +73,10 @@ section {
 .dark-text, .dark-text a, #svg-icon .dark-text, #svg-icon .dark-text a {
 	color: #0c0c51;
 	fill: #0c0c51;
+}
+
+#svg-icon {
+  display: block;
 }
 
 svg, object {
@@ -223,7 +227,7 @@ svg, object {
 .rect {
 	height: 10%;
 	width: 15%;
-	margin: 20% auto; 
+	margin: 20% auto;
 }
 
 .line {
@@ -305,12 +309,13 @@ div.day td {
 	.track {
 		display: none;
 	}
-	
+
 	.track.show {
 		display: block;
 	}
 
 }
+
 
 @media only screen and (max-height: 690px) {
 	#scroll-nav, #social-media, #nav {
