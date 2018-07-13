@@ -335,6 +335,10 @@ div.day td {
 	width: 100%;
 }
 
+#up, #down {
+	cursor: pointer;
+}
+
 @media only screen and (max-height: 600px), only screen and (max-width: 1002px) {
 	#scroll-nav, #social-media, #nav {
 		display: none;
