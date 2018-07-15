@@ -283,6 +283,11 @@ div.day td {
 	padding: 0.75em 1em;
 }
 
+div.day p {
+	text-align: center;
+	font-size: 1.25em;
+}
+
 #tracks-section h3 {
 	font-family: Chicago, sans-serif;
 }
