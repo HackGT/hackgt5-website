@@ -377,6 +377,10 @@ div.day p {
 	#scroll-nav, #social-media {
 		padding-top: 20%;
 	}
+
+	#social-media {
+		width: 7%;
+	}
 }
 
 @media only screen and (min-width: 1151px) {
