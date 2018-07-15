@@ -3,8 +3,6 @@ new fullpage('#fullpage', {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
     menu: '#nav',
-    responsiveWidth: 767,
-    responsiveHeight: 690,
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
         if (dark_text_pages.indexOf(destination.index) != -1) {
@@ -68,6 +66,7 @@ down.onclick = function() {
     fullpage_api.moveSectionDown();
 }
 
+// tracks
 document.querySelectorAll('div.track-option').forEach(function(option) {
     option.onclick = function() {
         document.querySelector('div.track.show').classList.remove('show');
@@ -75,3 +74,16 @@ document.querySelectorAll('div.track-option').forEach(function(option) {
         document.getElementById(divToShow).classList.add('show');
     }
 });
+
+// turn on/off scroll animations
+var media = window.matchMedia('(max-height: 600px), only screen and (max-width: 1002px)');
+media.addListener(adjustScroll);
+adjustScroll(media);
+
+function adjustScroll(media) {
+    if (media.matches) {
+        fullpage_api.setAutoScrolling(false);
+    } else {
+        fullpage_api.setAutoScrolling(true);
+    }
+}

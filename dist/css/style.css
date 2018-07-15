@@ -301,6 +301,7 @@ div.day p {
 
 .track h3 {
 	text-transform: uppercase;
+	font-size: 95%;
 }
 
 #about-section p {
@@ -321,13 +322,17 @@ div.day p {
 		display: block;
 	}
 
-  .main {
-    padding-top: 2%;
-  }
+	.main {
+		padding-top: 2%;
+	}
 
-  #questions {
-    font-size: 90%;
-  }
+	#questions {
+		font-size: 90%;
+	}
+
+	#event-section p {
+		font-size: 110%;
+	}
 
 }
 
