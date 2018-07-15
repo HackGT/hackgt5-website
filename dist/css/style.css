@@ -293,10 +293,22 @@ div.day p {
 	font-family: Chicago, sans-serif;
 }
 
-.track-option {
+.icon-grid {
 	margin-top: 4%;
+}
+
+.track-option {
 	text-align: center;
 	cursor: pointer;
+}
+
+.track-option h3 {
+	vertical-align: bottom;
+	margin-top: 0;
+}
+
+.track-option object {
+	transform: scale(0.75);
 }
 
 .track h3 {
