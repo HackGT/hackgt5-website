@@ -1,7 +1,7 @@
 new fullpage('#fullpage', {
     autoScrolling:true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    anchors: ['splash', 'event', 'tracks', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
+    anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
     menu: '#nav',
     responsiveWidth: 767,
     responsiveHeight: 690,

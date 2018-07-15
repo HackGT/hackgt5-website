@@ -38,7 +38,7 @@ section {
 	 * You'll also probably want to make this absolutely positioned to make life easier
 	 */
 
-	position: fixed; 
+	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 100;
@@ -49,14 +49,14 @@ section {
 
 #nav a {
 	text-decoration: none;
-	font-size: 115%;
+	font-size: 110%;
 	transition: color .7s ease;
 }
 
 #nav li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 3%;
+	margin-right: 2%;
 	height: 100%;
 	vertical-align: top;
 }
@@ -73,6 +73,10 @@ section {
 .dark-text, .dark-text a, #svg-icon .dark-text, #svg-icon .dark-text a {
 	color: #0c0c51;
 	fill: #0c0c51;
+}
+
+#svg-icon {
+  display: block;
 }
 
 svg, object {
@@ -153,10 +157,6 @@ svg, object {
 	font-family: Chicago, sans-serif;
 }
 
-#faq-email {
-	padding-top: 4%;
-}
-
 #registration-section {
 	background-color: #533b89;
 	font-family: Chicago, sans-serif;
@@ -194,6 +194,7 @@ svg, object {
 
 #social-media {
 	margin-left: 91.67%;
+	width: 5%;
 }
 
 #social-media > a {
@@ -223,7 +224,7 @@ svg, object {
 .rect {
 	height: 10%;
 	width: 15%;
-	margin: 20% auto; 
+	margin: 20% auto;
 }
 
 .line {
@@ -305,14 +306,41 @@ div.day td {
 	.track {
 		display: none;
 	}
-	
+
 	.track.show {
 		display: block;
 	}
 
+  .main {
+    padding-top: 2%;
+  }
+
+  #questions {
+    font-size: 95%;
+  }
+
 }
 
-@media only screen and (max-height: 690px) {
+#mlh-trust-badge {
+	display: block;
+	max-width: 80px;
+	min-width: 40px;
+	position: relative;
+	top: -20px;
+	width: 90%;
+	z-index: 10000;
+	left: 5px;
+}
+
+#mlh-trust-badge img {
+	width: 100%;
+}
+
+#up, #down {
+	cursor: pointer;
+}
+
+@media only screen and (max-height: 600px), only screen and (max-width: 1002px) {
 	#scroll-nav, #social-media, #nav {
 		display: none;
 		width: 0;
@@ -333,5 +361,11 @@ div.day td {
 @media only screen and (max-width: 1150px) {
 	#scroll-nav, #social-media {
 		padding-top: 20%;
+	}
+}
+
+@media only screen and (min-width: 1151px) {
+	#mlh-trust-badge {
+		left: 50%;
 	}
 }
