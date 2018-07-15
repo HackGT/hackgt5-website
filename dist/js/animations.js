@@ -3,6 +3,7 @@ new fullpage('#fullpage', {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
     menu: '#nav',
+    scrollOverflow: true,
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
         if (dark_text_pages.indexOf(destination.index) != -1) {
@@ -25,7 +26,7 @@ new fullpage('#fullpage', {
             });
         }
     }
-}); 
+});
 
 // for countdown
 var startDate = new Date('2018-10-19T21:00:00-04:00');
