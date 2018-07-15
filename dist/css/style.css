@@ -87,7 +87,7 @@ svg, object {
 	background-image: url(../assets/Splash\ BG.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
 	background-color: #e88170;
 	font-family: Chicago, sans-serif;
 }
@@ -97,7 +97,7 @@ svg, object {
 }
 
 #countdown h1 {
-	font-size: 4.5em;
+	font-size: 3em;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
@@ -130,6 +130,7 @@ svg, object {
 
 #countdown h3 {
 	margin-top: 2em;
+	font-size: 0.9em;
 }
 
 #event-section {
