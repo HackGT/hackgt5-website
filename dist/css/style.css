@@ -293,6 +293,10 @@ div.day td {
 	cursor: pointer;
 }
 
+.track h3 {
+	text-transform: uppercase;
+}
+
 #about-section p {
 	margin-top: 4%;
 }
@@ -316,7 +320,7 @@ div.day td {
   }
 
   #questions {
-    font-size: 95%;
+    font-size: 90%;
   }
 
 }
