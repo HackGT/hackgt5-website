@@ -7,7 +7,6 @@ new fullpage('#fullpage', {
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
         if (dark_text_pages.indexOf(destination.index) != -1) {
-            document.getElementById('scroll-nav').classList.add('dark-text');
             document.getElementById('nav').classList.add('dark-text');
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.classList.add('dark-text');
@@ -16,7 +15,6 @@ new fullpage('#fullpage', {
                 elem.classList.add('dark-text');
             });
         } else {
-            document.getElementById('scroll-nav').classList.remove('dark-text');
             document.getElementById('nav').classList.remove('dark-text');
             document.querySelectorAll('#social-media path').forEach(function(elem) {
                 elem.classList.remove('dark-text');
@@ -56,16 +54,6 @@ setTimeout(function() {
     setInterval(updateDate, 3600 * 1000);
 }, Math.round(secondsToHourMark * 1000));
 
-// scroll up/down with the rectangles on the side:
-var up = document.getElementById('up');
-up.onclick = function() {
-    fullpage_api.moveSectionUp();
-}
-
-var down = document.getElementById('down');
-down.onclick = function() {
-    fullpage_api.moveSectionDown();
-}
 
 // tracks
 document.querySelectorAll('div.track-option').forEach(function(option) {
