@@ -151,10 +151,10 @@ svg, object {
 }
 
 #faq-section h1 {
-	margin-bottom: 0;
+	margin: 0;
 }
 
-#faq-section h3 {
+#faq-section h4 {
 	font-family: Chicago, sans-serif;
 }
 
@@ -308,7 +308,7 @@ div.day p {
 }
 
 .track-option object {
-	transform: scale(0.75);
+	transform: scale(0.70);
 }
 
 .track h3 {
@@ -317,35 +317,7 @@ div.day p {
 }
 
 #about-section p {
-	margin-top: 4%;
-}
-
-@media only screen and (min-width: 767px) {
-	#about-section .svg-container {
-		max-width: 80%;
-		margin: 0 auto;
-	}
-
-	.track {
-		display: none;
-	}
-
-	.track.show {
-		display: block;
-	}
-
-	.main {
-		padding-top: 2%;
-	}
-
-	#questions {
-		font-size: 90%;
-	}
-
-	#event-section p {
-		font-size: 110%;
-	}
-
+	margin-top: 2%;
 }
 
 #mlh-trust-badge {
@@ -363,12 +335,53 @@ div.day p {
 	width: 100%;
 }
 
-#up, #down {
-	cursor: pointer;
+@media only screen and (max-width: 766px) {
+  #schedule-section div.day-container, #schedule-section div.day p, #schedule-section table {
+    font-size: 1em;
+  }
 }
 
-@media only screen and (max-height: 600px), only screen and (max-width: 1002px) {
-	#scroll-nav, #social-media, #nav {
+@media only screen and (min-width: 767px) {
+	#about-section .svg-container {
+		max-width: 65%;
+		margin: 0 auto;
+	}
+
+  #about-section p {
+    font-size: 85%
+  }
+
+	.track {
+		display: none;
+	}
+
+	.track.show {
+		display: block;
+	}
+
+	.main {
+		padding-top: 3%;
+	}
+
+  #questions {
+    padding-left: 20px;
+  }
+
+	#faq-section p {
+		font-size: 83%;
+	}
+
+  #questions h4 {
+    margin-bottom: 0;
+  }
+
+	#event-section p {
+		font-size: 110%;
+	}
+}
+
+@media only screen and (max-height: 650px), only screen and (max-width: 1002px) {
+	#nav {
 		display: none;
 		width: 0;
 		height: 0;
@@ -381,8 +394,12 @@ div.day p {
 	}
 
 	#faq-header, #faq-email .col-8-12 {
-		width: 100% !important;
+		width: 100%;
 	}
+
+  .main {
+    padding: 4em 0;
+  }
 }
 
 @media only screen and (max-width: 1150px) {

@@ -65,7 +65,7 @@ document.querySelectorAll('div.track-option').forEach(function(option) {
 });
 
 // turn on/off scroll animations
-var media = window.matchMedia('(max-height: 600px), only screen and (max-width: 1002px)');
+var media = window.matchMedia('(max-height: 650px), only screen and (max-width: 1002px)');
 media.addListener(adjustScroll);
 adjustScroll(media);
 
