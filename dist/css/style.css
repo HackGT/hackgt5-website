@@ -420,4 +420,8 @@ div.day p {
 	#mlh-trust-badge {
 		left: 50%;
 	}
+
+	#faq-section p, #about-section p {
+		font-size: 100%;
+	}
 }
