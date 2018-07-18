@@ -3,6 +3,8 @@ new fullpage('#fullpage', {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'contact'],
     menu: '#nav',
+    responsiveHeight: 650,
+    responsiveWidth: 1002,
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
         if (dark_text_pages.indexOf(destination.index) != -1) {
@@ -59,16 +61,3 @@ document.querySelectorAll('div.track-option').forEach(function(option) {
         document.querySelector(`.${track} h3`).classList.add('active-track');
     }
 });
-
-// turn on/off scroll animations
-var media = window.matchMedia('only screen (max-height: 650px), only screen and (max-width: 1002px)');
-media.addListener(adjustScroll);
-adjustScroll(media);
-
-function adjustScroll(media) {
-    if (media.matches) {
-        fullpage_api.setAutoScrolling(false);
-    } else {
-        fullpage_api.setAutoScrolling(true);
-    }
-}
