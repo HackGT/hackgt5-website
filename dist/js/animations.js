@@ -1,7 +1,7 @@
 new fullpage('#fullpage', {
     autoScrolling:true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
+    anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'contact'],
     menu: '#nav',
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
