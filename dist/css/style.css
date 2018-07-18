@@ -102,7 +102,13 @@ svg, object {
 	margin-bottom: 0;
 }
 
-#countdown h2 {
+#countdown #subtitle {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+#countdown #date {
 	font-family: "Source Code Pro", sans-serif;
 	margin-top: 0;
 }
@@ -422,6 +428,12 @@ div.day p {
 	}
 
 	#faq-section p, #about-section p {
-		font-size: 100%;
+		font-size: 92%;
 	}
+}
+
+@media only screen and (min-width: 1451px) {
+  #faq-section p, #about-section p {
+    font-size: 100%;
+  }
 }
