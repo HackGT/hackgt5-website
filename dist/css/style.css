@@ -311,6 +311,10 @@ div.day p {
 	transform: scale(0.70);
 }
 
+.track-option h3.active-track {
+  text-decoration: underline;
+}
+
 .track h3 {
 	text-transform: uppercase;
 	font-size: 95%;

@@ -3,7 +3,6 @@ new fullpage('#fullpage', {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'sponsors'],
     menu: '#nav',
-    scrollOverflow: true,
     onLeave: function(origin, destination, direction) {
         var dark_text_pages = [2, 4, 6];
         if (dark_text_pages.indexOf(destination.index) != -1) {
@@ -53,8 +52,11 @@ setTimeout(function() {
 document.querySelectorAll('div.track-option').forEach(function(option) {
     option.onclick = function() {
         document.querySelector('div.track.show').classList.remove('show');
-        var divToShow = option.dataset.track;
-        document.getElementById(divToShow).classList.add('show');
+        document.querySelector('div.track-option h3.active-track').classList.remove('active-track');
+
+        var track = option.dataset.track;
+        document.getElementById(track).classList.add('show');
+        document.querySelector(`.${track} h3`).classList.add('active-track');
     }
 });
 
