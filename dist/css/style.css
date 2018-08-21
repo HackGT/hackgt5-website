@@ -326,6 +326,10 @@ div.day p {
 	font-size: 95%;
 }
 
+#security img {
+	width: 25%;
+}
+
 #about-section p {
 	margin-top: 2%;
 }
