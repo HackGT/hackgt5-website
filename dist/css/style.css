@@ -299,6 +299,10 @@ div.day p {
 	font-family: Chicago, sans-serif;
 }
 
+#tracks-section p {
+	font-size: 0.9em;
+}
+
 .icon-grid {
 	margin-top: 4%;
 }
@@ -326,7 +330,7 @@ div.day p {
 	font-size: 95%;
 }
 
-#security img, #ai img {
+.track.grid img {
 	width: 25%;
 }
 
