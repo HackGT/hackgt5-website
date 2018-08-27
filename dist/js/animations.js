@@ -47,7 +47,6 @@ document.addEventListener('scroll', function(event){
 });
 
 var navLinks = navItems.getElementsByTagName('a');
-console.log(navLinks)
 for(var i = 0; i < navLinks.length; i++){    
     navLinks[i].onclick = function(event){
         var sectionId = this.href.substr(this.href.indexOf('#') + 1);
