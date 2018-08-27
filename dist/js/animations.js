@@ -1,10 +1,9 @@
 // Change nav color on scroll
 var lastSection = -1;
+var navbar = document.getElementsByClassName('navbar')[0];
+var navItems = document.getElementById('nav');
+var logo = document.getElementById('svg-icon');
 document.addEventListener('scroll', function(event){
-    var navbar = document.getElementsByClassName('navbar')[0];
-    var navItems = document.getElementById('nav');
-    var logo = document.getElementById('svg-icon');
-
     if(window.scrollY == 0){
         navbar.style.backgroundColor = 'transparent';
         logo.style.height = '70px';
@@ -46,6 +45,27 @@ document.addEventListener('scroll', function(event){
         }
     }
 });
+
+var navLinks = navItems.getElementsByTagName('a');
+console.log(navLinks)
+for(var i = 0; i < navLinks.length; i++){    
+    navLinks[i].onclick = function(event){
+        var sectionId = this.href.substr(this.href.indexOf('#') + 1);
+        scrollToDataAnchor(sectionId);
+    }
+}
+if(window.location.hash){
+    var sectionId = window.location.hash.substr(window.location.hash.indexOf('#') + 1);
+    scrollToDataAnchor(sectionId);
+}
+
+function scrollToDataAnchor(value){
+    var section = document.querySelector("section[data-anchor='" + value + "']");
+    if(section){
+        var scrollPosition = section.getBoundingClientRect().y + window.scrollY;
+        window.scroll({top: scrollPosition, behavior: 'smooth'});
+    }
+}
 
 // for countdown
 var startDate = new Date('2018-10-19T21:00:00-04:00');
