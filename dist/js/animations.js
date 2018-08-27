@@ -1,10 +1,23 @@
 // Change nav color on scroll
-
 var lastSection = -1;
 document.addEventListener('scroll', function(event){
+    var navbar = document.getElementsByClassName('navbar')[0];
+    var navItems = document.getElementById('nav');
+    var logo = document.getElementById('svg-icon');
+
+    if(window.scrollY == 0){
+        navbar.style.backgroundColor = 'transparent';
+        logo.style.height = '70px';
+        lastSection = -1;
+        return;
+    }
+    logo.style.height = '1.5em';
+
     /* Recalculating section positions within event callback rather than once on load
-       just in case an asset loads and changes a section position */
-    var navBottom = document.getElementById('nav').getBoundingClientRect().bottom;
+       just in case an asset loads and changes a section position
+    */
+
+    var navBottom = navbar.getBoundingClientRect().bottom;
     var sections = document.getElementsByTagName('section');
 
     for(var i = sections.length - 1; i >= 0; i--){
@@ -12,17 +25,20 @@ document.addEventListener('scroll', function(event){
         if(navBottom > sectionTop){
             if(lastSection != i){
                 if(sections[i].classList.contains('dark-text')){
-                    document.getElementById('nav').classList.add('dark-text');
+                    navItems.classList.add('dark-text');
+                    navItems.classList.remove('light-text');
                 }else{
-                    document.getElementById('nav').classList.remove('dark-text');
+                    navItems.classList.add('light-text');
+                    navItems.classList.remove('dark-text');
                 }
 
-                var color = window.getComputedStyle(sections[i]).backgroundColor.match(/[.?\d]+/g);
-                if(color[3] == 0){
-                    color = ['255', '255', '255', '1'];
+                var bgcolor = window.getComputedStyle(sections[i]).backgroundColor.match(/[.?\d]+/g);
+                // When no bg is set, the alpha is 0, so using a white bg in this case
+                if(bgcolor[3] == 0){
+                    bgcolor = ['255', '255', '255', '1'];
                 }
-                var navBg = 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 1)';
-                document.getElementsByClassName('navbar')[0].style.backgroundColor = navBg;
+                var navBg = 'rgba(' + bgcolor[0] + ', ' + bgcolor[1] + ', ' + bgcolor[2] + ', 1)';
+                navbar.style.backgroundColor = navBg;
 
                 lastSection = i;
             }

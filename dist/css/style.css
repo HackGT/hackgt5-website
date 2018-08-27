@@ -81,6 +81,7 @@ section {
 
 #svg-icon {
   display: block;
+  transition: all 0.7s ease;
 }
 
 svg, object {
@@ -219,9 +220,6 @@ svg, object {
 	height: 8%;
 	margin: 20% 0;
 }
- #social-media > a > svg > path, #svg-icon {
-	transition: fill 0.7s ease;
- }
 
 #scroll-nav {
 	padding-left: 20px;
