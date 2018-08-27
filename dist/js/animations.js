@@ -1,22 +1,25 @@
-new fullpage('#fullpage', {
-    autoScrolling:true,
-    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    anchors: ['splash', 'event', 'paths', 'schedule', 'faq', 'registration', 'about', 'contact'],
-    menu: '#nav',
-    responsiveHeight: 650,
-    responsiveWidth: 1002,
-    onLeave: function(origin, destination, direction) {
-        var dark_text_pages = [2, 4, 6];
-        if (dark_text_pages.indexOf(destination.index) != -1) {
-            document.getElementById('nav').classList.add('dark-text');
-            document.querySelectorAll('#svg-icon *').forEach(function(elem) {
-                elem.classList.add('dark-text');
-            });
-        } else {
-            document.getElementById('nav').classList.remove('dark-text');
-            document.querySelectorAll('#svg-icon *').forEach(function(elem) {
-                elem.classList.remove('dark-text');
-            });
+// Change nav color on scroll
+
+var lastSection = -1;
+document.addEventListener('scroll', function(event){
+    /* Recalculating section positions within event callback rather than once on load
+       just in case an asset loads and changes a section position */
+    var navBottom = document.getElementById('nav').getBoundingClientRect().bottom;
+    var sections = document.getElementsByTagName('section');
+
+    for(var i = sections.length - 1; i >= 0; i--){
+        var sectionTop = sections[i].getBoundingClientRect().top;
+        if(navBottom > sectionTop){
+            if(lastSection != i){
+                if(sections[i].classList.contains('dark-text')){
+                    document.getElementById('nav').classList.add('dark-text');
+                }else{
+                    document.getElementById('nav').classList.remove('dark-text');
+                }
+
+                lastSection = i;
+            }
+            break;
         }
     }
 });
