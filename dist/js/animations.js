@@ -17,6 +17,13 @@ document.addEventListener('scroll', function(event){
                     document.getElementById('nav').classList.remove('dark-text');
                 }
 
+                var color = window.getComputedStyle(sections[i]).backgroundColor.match(/[.?\d]+/g);
+                if(color[3] == 0){
+                    color = ['255', '255', '255', '1'];
+                }
+                var navBg = 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 1)';
+                document.getElementsByClassName('navbar')[0].style.backgroundColor = navBg;
+
                 lastSection = i;
             }
             break;

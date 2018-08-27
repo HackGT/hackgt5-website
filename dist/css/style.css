@@ -48,12 +48,13 @@ section {
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', sans-serif;
 	text-align: center;
+	transition: background-color 0.7s ease;
 }
 
 #nav a {
 	text-decoration: none;
 	font-size: 110%;
-	transition: color .7s ease;
+	transition: color 0.7s ease;
 }
 
 #nav li {
@@ -447,4 +448,10 @@ div.day p {
   #faq-section p, #about-section p {
     font-size: 100%;
   }
+}
+
+.removeVerticalSpace {
+	display: block;
+	height: 0;
+	overflow: visible;
 }
