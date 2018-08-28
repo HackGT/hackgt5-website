@@ -341,17 +341,15 @@ div.day p {
 
 #mlh-trust-badge {
 	display: block;
-	max-width: 80px;
-	min-width: 40px;
 	position: relative;
 	top: -20px;
-	width: 90%;
+	width: 70px;
 	z-index: 10000;
 	left: 5px;
 }
 
 #mlh-trust-badge img {
-	min-width: 100%;
+	width: 100%;
 }
 
 @media only screen and (max-width: 766px) {
