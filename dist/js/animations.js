@@ -66,6 +66,7 @@ function scrollToDataAnchor(value){
     if(section){
         var scrollPosition = section.getBoundingClientRect().top + window.scrollY;
         window.scroll({top: scrollPosition, behavior: 'smooth'});
+        history.replaceState({}, '', '#' + value);
         return true;
     }
 
