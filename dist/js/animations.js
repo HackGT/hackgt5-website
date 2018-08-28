@@ -32,8 +32,8 @@ document.addEventListener('scroll', function(event){
                 }
 
                 var bgcolor = window.getComputedStyle(sections[i]).backgroundColor.match(/[.?\d]+/g);
-                // When no bg is set, the alpha is 0, so using a white bg in this case
-                if(bgcolor[3] == 0){
+                // When no bg is set or the alpha is 0, use a white bg in this case
+                if(!bgcolor || bgcolor[3] == 0){
                     bgcolor = ['255', '255', '255', '1'];
                 }
                 var navBg = 'rgba(' + bgcolor[0] + ', ' + bgcolor[1] + ', ' + bgcolor[2] + ', 1)';
@@ -50,9 +50,12 @@ var navLinks = navItems.getElementsByTagName('a');
 for(var i = 0; i < navLinks.length; i++){    
     navLinks[i].onclick = function(event){
         var sectionId = this.href.substr(this.href.indexOf('#') + 1);
-        scrollToDataAnchor(sectionId);
+        if(scrollToDataAnchor(sectionId)){
+            return false; // prevent default link action
+        }
     }
 }
+
 if(window.location.hash){
     var sectionId = window.location.hash.substr(window.location.hash.indexOf('#') + 1);
     scrollToDataAnchor(sectionId);
@@ -61,9 +64,12 @@ if(window.location.hash){
 function scrollToDataAnchor(value){
     var section = document.querySelector("section[data-anchor='" + value + "']");
     if(section){
-        var scrollPosition = section.getBoundingClientRect().y + window.scrollY;
+        var scrollPosition = section.getBoundingClientRect().top + window.scrollY;
         window.scroll({top: scrollPosition, behavior: 'smooth'});
+        return true;
     }
+
+    return false;
 }
 
 // for countdown
