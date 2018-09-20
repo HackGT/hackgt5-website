@@ -187,12 +187,12 @@ svg, object {
 	font-size: 1.2em;
 }
 
-#contact-section {
+#sponsor-section {
 	background-color: #e88170;
 	text-align: center;
 }
 
-#contact-section p {
+#sponsor-section p {
 	font-size: 125%;
 }
 
@@ -222,6 +222,43 @@ svg, object {
 
 #scroll-nav {
 	padding-left: 20px;
+}
+
+.social-row {
+	margin-top: 25px;
+}
+.social-row > a > img {
+	transition: transform 0.5s;
+}
+.social-row > a > img:hover {
+	transform: scale(1.2);
+}
+
+.sponsors > a > img {
+	filter: brightness(0) invert(1);
+	transition: transform 0.5s;
+}
+.sponsors > a > img:hover {
+	transform: scale(1.1);
+}
+.sponsors {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.sponsors.top-tier > a > img {
+	height: 4em;
+	padding: 20px;
+}
+.sponsors.middle-tier > a > img {
+	height: 3em;
+	padding: 15px;
+}
+.sponsors.lower-tier > a > img {
+	height: 2.5em;
+	padding: 15px;
 }
 
 .rect, .line {
