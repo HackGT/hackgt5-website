@@ -1,12 +1,21 @@
-function showDay(day) {
-    document.querySelectorAll("div.day-container > div").forEach(function(item, index) {
-        item.classList.remove("selected");
-    });
-    document.getSelection().anchorNode.parentElement.classList.add("selected");
-    var dayElem = document.getElementById(day);
-    document.querySelectorAll(".day.show").forEach(function(item, index) {
-        item.classList.remove("show");
-    });
+var dayTitles = document.querySelectorAll(".day-container > div");
+for (var i = 0; i < dayTitles.length; i++) {
+    dayTitles[i].addEventListener("click", showDay);
+}
 
-    dayElem.classList.add("show");
+function showDay(e) {
+    for (var i = 0; i < dayTitles.length; i++) {
+        dayTitles[i].classList.remove("selected");
+    }
+    e.target.classList.add("selected");
+
+    var days = document.querySelectorAll(".event-container > .day");
+    for (var i = 0; i < days.length; i++) {
+        if (days[i].id === e.target.dataset.dayId) {
+            days[i].classList.add("show");
+        }
+        else {
+            days[i].classList.remove("show");
+        }
+    }
 }

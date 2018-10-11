@@ -286,9 +286,12 @@ svg, object {
 	height: 26%;
 }
 
-div.day-container > div
-{
+div.day-container > div {
 	display: inline;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 div.day-container {
