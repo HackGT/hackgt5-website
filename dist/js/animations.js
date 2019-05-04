@@ -74,32 +74,32 @@ function scrollToDataAnchor(value) {
 }
 
 // for countdown
-var startDate = new Date("2018-10-19T21:00:00-04:00");
+// var startDate = new Date("2018-10-19T21:00:00-04:00");
 
-var weeks = document.getElementById("weeks");
-var days = document.getElementById("days");
-var hours = document.getElementById("hours");
+// var weeks = document.getElementById("weeks");
+// var days = document.getElementById("days");
+// var hours = document.getElementById("hours");
 
-function updateDate() {
-    var dateDelta = (startDate - Date.now()) / 1000;
-    var hourDelta = dateDelta / (60 * 60);
-    var dayDelta = hourDelta / 24;
-    var weekDelta = dayDelta / 7;
+// function updateDate() {
+//     var dateDelta = (startDate - Date.now()) / 1000;
+//     var hourDelta = dateDelta / (60 * 60);
+//     var dayDelta = hourDelta / 24;
+//     var weekDelta = dayDelta / 7;
 
-    hourDelta %= 24;
-    dayDelta %= 7;
+//     hourDelta %= 24;
+//     dayDelta %= 7;
 
-    weeks.textContent = Math.floor(weekDelta);
-    days.textContent = Math.floor(dayDelta);
-    hours.textContent = Math.floor(hourDelta);
-}
+//     weeks.textContent = Math.floor(weekDelta);
+//     days.textContent = Math.floor(dayDelta);
+//     hours.textContent = Math.floor(hourDelta);
+// }
 
-updateDate();
-var secondsToHourMark = 3600 - ((Date.now() / 1000) % 3600);
-setTimeout(function () {
-    updateDate();
-    setInterval(updateDate, 3600 * 1000);
-}, Math.round(secondsToHourMark * 1000));
+// updateDate();
+// var secondsToHourMark = 3600 - ((Date.now() / 1000) % 3600);
+// setTimeout(function () {
+//     updateDate();
+//     setInterval(updateDate, 3600 * 1000);
+// }, Math.round(secondsToHourMark * 1000));
 
 
 // tracks
