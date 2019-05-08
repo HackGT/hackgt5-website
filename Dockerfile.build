@@ -1,6 +1,0 @@
-FROM node:9
-
-WORKDIR /src
-RUN npm install -g gulp
-
-CMD ["bash", "/src/docker/build.sh"]
