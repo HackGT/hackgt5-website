@@ -33,3 +33,4 @@ The project will be built each time you make changes.
 - [x] swap out bg splash image for svg's
 - [ ] scroll animations (rectangles on right side, fade text in/out etc.)
 - [ ] svg animations for each page
+
